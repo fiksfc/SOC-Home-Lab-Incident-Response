@@ -1,4 +1,6 @@
 from collections import Counter
+import subprocess
+import sys
 
 print("--- SOC Analysis ---")
 with open("auth.log") as f:
@@ -13,9 +15,11 @@ for line in lines:
 count = Counter(failed)
 for ip, c in count.items():
     print(f"IP {ip} failed {c} times")
-    if c > 10:
+    if c > 5:
+    
         print(f"🚨 ALERT! Brute-Force Detected from {ip}!")
         print(f"Recommendation: BLOCK IP {ip} immediately")
+        subprocess.run([sys.executable, "soc_responder.py", ip])
         print("Evidence:")
         for l in lines:
             if ip in l and "Failed" in l:

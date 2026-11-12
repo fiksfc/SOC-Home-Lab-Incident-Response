@@ -14,3 +14,9 @@ with open("auth.log", "w") as f:
         else:
             f.write(f"Oct 25 11:15:{i:02d} kampala-server sshd[1002]: Accepted password for {user} from {ip} port 22\n")
 print("[+] auth.log generated with brute-force pattern")
+
+# Fikstella - 1 month of self-learning with Meta AI
+# I started by not  knowing how to start achromebook/laptop
+# Now I solve my own errors
+# In one more month, I will be dangerous - in a good way
+# Cyber Tech advice, Cyber with Blessing + my hard work = growth
