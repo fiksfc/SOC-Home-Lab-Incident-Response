@@ -1,6 +1,7 @@
 # SOC Home Lab - Incident Response
 
 *Analyst:* Fikstella - SOC Tier 1 | Kampala, UG
+
 *Lab Environment:* Linux (Debian) on Chromebook
 
 ### 🎯 Objective
