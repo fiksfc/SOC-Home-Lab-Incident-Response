@@ -22,3 +22,5 @@ with open("blocked_ips.txt", "a") as f:
 
 print(f"[SUCCESS] {attacker_ip} has been blocked and added to blocked_ips.txt")
 print(f"Sending email alert to SOC team: fikstella@soc.com")
+#simulated:no realemail is sent
+#its just a study enviroment
